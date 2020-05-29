@@ -39,7 +39,36 @@ if (str[0] == 'a') {
 
 str = '«В некиим царстве, в некиим государстве жил-был богатый купец, именитый человек».';
 console.log(str.substr(48, 13));
+
 //---Задача № 5 hw 2_2
 
 str = '123';
 console.log(str[0] + str[1] + str[2]);
+
+//---Задача №6 hw 2_2
+
+let a = 10;
+if ( a == 10) {
+    console.log('Верно');
+}else {
+    console.log('Неверно');
+}
+
+//----Задача №7 hw2_2
+
+let y = 'test';
+if(y == 'test') {
+    alert('Верно');
+}else {
+    alert('Неверно');
+}
+
+//----Задача № 8 hw2_2
+let o = 6,
+    b = 3;
+
+if (o <= 1 && b >= 3) {
+    console.log(o + b);
+}else {
+    console.log(o - b);
+}
