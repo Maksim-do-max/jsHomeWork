@@ -1,24 +1,30 @@
 //-----Задача №1
 
 let num = 1;
-    num += 12;
-    num -= 14;
-    num *= 5;
-    num /= 7;
-    num ++;
-    num --;
-    num += 7;
-    num -= 18;
-    num *= 10;
-    num /= 15;
-    
+num += 12;
+num -= 14;
+num *= 5;
+num /= 7;
+num++;
+num--;
+num += 7;
+num -= 18;
+num *= 10;
+num /= 15;
+
 console.log(num);
 
 //-----Задача №2
 
-let time = [ 'hour:', 'minute:', 'seconds']
+// let time = [ 'hour:', 'minute:', 'seconds']
 
-console.log(time[0] + time[1] + time[2]); 
+// console.log(time[0] + time[1] + time[2]); 
+
+let hour = 4,
+    minute = 30,
+    second = 59;
+console.log(hour + ':' + minute + ':' + second);
+
 
 //-----Задача #3
 
@@ -32,4 +38,4 @@ if (str[0] == 'a') {
 //---Задача №4
 
 str = '«В некиим царстве, в некиим государстве жил-был богатый купец, именитый человек».';
-  console.log(str.substr(48,13)) ;
+console.log(str.substr(48, 13));
