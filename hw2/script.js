@@ -78,7 +78,7 @@ if (t >= 0 && t < 15) {
 } else if (t >= 45 && t< 59) {
     console.log(' в четвертую');
 } else {
-    console.log(' Да вот это время было')
+    console.log(' Да вот это время было');
 }  
 
 //---- Задача № 8
@@ -92,11 +92,140 @@ if (day >= 1 && day < 11) {
 } else if (day >= 21 && day <= 31)  {
     console.log(' в третью декаду месяца');
 } else {
-    console.log(' НЕТ такого не может быть')
+    console.log(' НЕТ такого не может быть');
 }
 
 // -----Задача № 9
 
+let days = prompt('Введите количества дней');
+
+const daysinYear = 365,
+      daysinMonth = 31,
+      daysinWeek = 7,
+      hourinDay = 24,
+      minuteinDay = 1440,
+      secondinDay = 86400;
+
+let year = days / daysinYear,
+    months = days / daysinMonth,
+    week = days / daysinWeek,
+    hours = days * hourinDay,
+    minutes = days * minuteinDay,
+    seconds = days * secondinDay;
+
+if (days >= daysinYear) {
+    console.log(year, 'год');
+    console.log(months, 'месяц');
+    console.log(week, 'неделя');
+    console.log(hours, 'час');
+    console.log(minutes, 'минута');
+    console.log(seconds, 'секунда');
+} else if (days < daysinYear && days >= daysinMonth) {
+    console.log('меньше года');
+    console.log(months, 'месяц');
+    console.log(week, 'неделя');
+    console.log(hours, 'час');
+    console.log(minute, 'минута');
+    console.log(seconds, 'секунда');
+} else if (days < daysinMonth && days >= daysinWeek) {
+    console.log('меньше месяца');    
+    console.log(week, 'неделя');
+    console.log(hours, 'час');
+    console.log(minutes, 'минута');
+    console.log(seconds, 'секунда');
+} else  {
+    console.log('меньше недели');    
+    console.log(hours, 'час');
+    console.log(minutes, 'минута');
+    console.log(seconds, 'секунда');
+} 
+
+//----Задача №10
+
+let = Junuary,
+     February,
+    March,
+    Aprill,
+    May,
+    June,
+    July,
+    August,
+    Semtember,
+    October,
+    November,
+    December;
+
+    day = prompt('Введите день от 1 до 365');
+
+    if (day > 1 && day <= 31) {
+        day = ' Junuary';
+        console.log('Январь - Junuary');
+    } else if (day > 31 && day <= 59) {
+        day = ' February';
+        console.log('Февраль - February');
+    } else if (day > 59 && day <= 90) {
+        day = '  March';        
+        console.log('Март - March');
+    } else if (day > 90 && day <= 120) {
+        day = '  Aprill'; 
+        console.log('Апрель - Aprill');
+    } else if (day > 120 && day <= 151) {
+        day = ' May'; 
+        console.log(' Май - May');
+    } else if (day > 151 && day <= 181) {
+        day = ' June';
+        console.log('Июнь - June');
+    } else if (day > 181 && day <= 212) {
+        day = ' July';
+        console.log('Июль - July');
+    } else if (day > 212 && day <= 243) {
+        day = ' August';
+        console.log('Август - August');
+    }  else if (day > 243 && day <= 273) {
+        day = ' September';
+        console.log('Сентябрь - September');
+    } else if (day > 273 && day <= 304) {
+        day = ' October';
+        console.log('Октябрь - October');
+    } else if (day > 304 && day <= 335) {
+        day = ' November';
+        console.log('Ноябрь - November');
+    } else if (day > 335 && day <= 365) {
+        day = ' December';
+        console.log('Декабрь - December');
+    } else {
+        console.log(' Наберите еще раз день от 1 до 365. ');
+    }
+
+    switch(day) {
+        case January:
+        case February:
+        case December:
+            console.log('Зима');
+        break;
+
+        case March:
+        case Aprill:
+        case May:
+            console.log('Весна');
+        break;
+
+        case June:
+        case Julyl:
+        case August:
+            console.log('Лето');
+        break;
+
+        case September:
+        case October:
+        case November:
+            console.log('Осень');
+        break;
+
+        default:
+            console.log('неправильно ввели число');
+        break;
+    }
 
 
 
