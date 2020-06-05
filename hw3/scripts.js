@@ -129,19 +129,27 @@ do {
 
      //---Задача № 10
 
-     let dig,
-        count1 = 0,
-        n5 = 234,
-        reverseN = '';
+     let n5 = 234,
+        counDigit = 0,
+        dig,
+        reverseN = ' ';
 
     sum = 0;
 
     while (n5 > 0) {
-        dig = n5 % 10;
-        n5 = Math.floor(n / 10);
-        
-        console.log(dig)
+
+        dig = n5 / 10;
+        n5 = Math.floor(n5 / 10);
+        reverseN += dig;
+        sum += dig;
+        counDigit++;
+        console.log('числа на экран ' + dig);
     }
+
+    console.log( 'Количества цифр' + counDigit);
+    console.log( 'сумма ' + sum);
+    console.log( 'Обратный порядок цифр' + reverseN);
+
    
     
 
