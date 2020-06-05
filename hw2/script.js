@@ -142,7 +142,7 @@ if (days >= daysinYear) {
 
 //----Задача №10
 
-let = Junuary,
+/*let = Junuary,
      February,
     March,
     Aprill,
@@ -225,7 +225,7 @@ let = Junuary,
         default:
             console.log('неправильно ввели число');
         break;
-    }
+    }*/
 
 
 
