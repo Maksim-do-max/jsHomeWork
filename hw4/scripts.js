@@ -108,4 +108,19 @@ c = 0;
 for(let i = 0; i < arr6.length; i++) {
     if(arr6[i] == undefined) c++;
 }
-console.log(a);
+console.log(c);
+
+//----Задача№ 10
+
+let arr7 = [48,9,0,4,21,2,1,0,8,84,76,8,4,13,0,2],
+    sum = 0;
+let arr7fin = arr7.slice(arr7.indexOf(0) + 1, arr7.lastIndexOf(0));
+
+if(arr7fin == []) {
+    console.log(0);
+} else {
+    for(let i = 0; i < arr7fin.length; i++) {
+        sum += arr7fin[i];
+}
+}
+console.log(sum);
