@@ -89,17 +89,15 @@ function fastCheck(phone) {
 }
 console.log(fastCheck(phoneNumber));
 
-//---- №9
+
+    //-----9
 
 let url = 'https://tech.onliner.by/2018/04/26/smart-do-200/?utm_source=main_tile&utm_medium=smartdo200#zag3';
 
 function getUrl(url) {
 
-    let domenName = url.match(/http[s]?:\/\/(((\w+)^(\.+)?\w+\-^\w^)^)/g),
-        withoutParametrs = url.match(/(\/(\/?(\w)-^)+\/)/g),
-        parameters = url.match(/(\?)(\w\=^\_^\&^)^/g),
-        hash = url.match(/#(\w^.)^/g);
-    return [domenName, withoutParametrs, parameters, hash];
+    let domenName = url.match(/{https?:\/\/}{[a-zA-Z.\-]{2,}}\/.+\/.?\?{[a-zA-Z_\-=]+=.+}?{#[\.+]?}/g);
+    return [domenName];
 }
 
-    console.log(getUrl(url));
+console.log(getUrl(url));
