@@ -44,18 +44,14 @@ let Liquid = function (name) {
     this.show = function () {
 
         if (this.result > 0) {
-            console.log('Кран "' + this.name + '" был открыт - ' + this.totalTime + 'ч, и стоимость израсходованной воды составляет = ' + this.result + 'р.');
+            console.log(this.name + ' был открыт - ' + this.totalTime + 'ч, и стоимость израсходованной воды составляет = ' + this.result + 'р.');
         } else {
-            console.log('Кран "' + this.name + '" закрыт');
+            console.log(this.name + ' закрыт');
         }
     };
 };
 
 let liquid = new Liquid('Кухня');
-liquid.get();
-
-liquid = new Liquid('Ванная');
-liquid.get();
 
 
 // Задание №10
@@ -66,10 +62,9 @@ let Pool = function (volume, status) {
     this.name = 'Бассейн';
     this.volume = volume || 1000;
     this.consumpt = 0.309;
-   
-    };    
 
     this.get = function () {
+
         if (status == true) {
             this.firstDate = prompt('В какое время идет вода, в формате 00:00');
             this.secondDate = prompt('В какое время прекращено наполнение, в формате 00:00');
@@ -77,8 +72,8 @@ let Pool = function (volume, status) {
             console.log('Кран не открыт');
             return;
         };
-        
-       
+
+
         this.mode();
     };
 
@@ -123,8 +118,8 @@ let Pool = function (volume, status) {
         this.operation();
     };
 
+};
+
 let pool = new Pool(prompt('Введите скорость насоса?'), confirm('Включить насос?'));
 
 pool.get();
-
-   
